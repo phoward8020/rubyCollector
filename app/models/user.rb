@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :collections
+
   has_secure_password
 
   validates_confirmation_of :password, on: :create
