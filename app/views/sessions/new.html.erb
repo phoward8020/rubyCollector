@@ -1,0 +1,7 @@
+<h1>login</h1>
+
+<%= bootstrap_form_for :user do |f| %>
+  <%= f.text_field :email, placeholder: "Enter your email." %>
+  <%= f.password_field :password, placeholder: "Enter your password." %>
+  <%= f.submit "login", :class => "btn btn-primary" %>
+<% end %> 
